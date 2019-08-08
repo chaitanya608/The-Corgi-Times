@@ -1,0 +1,143 @@
+/*Main objectives:
+* Left and right articles in the first row should each occupy 25% of the space. Middle article should occupy 50% of the space.
+*
+*/
+
+
+/* .main-brand is used for the title*/
+
+.main-brand {
+    font-size: 60px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Great Vibes', cursive;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+/* .story-image specifies that the image should take up 100% space in its article.*/
+
+.story-image {
+    width: 100%
+}
+
+
+/* .story-title is used for titles of artciles or stories.*/
+
+.story-title {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 30px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+
+/* .story-text specifies properties of text in each story. line-height specifies the line spacing between any two lines in the text.*/
+
+.story-text {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+
+/* .row is used to define the style of the three main articles listed below the main header.*/
+
+.row {
+    display: flex;
+    align-items: stretch;
+}
+
+
+/**/
+
+.story {
+    border: 1px solid #333333;
+    padding: 5px;
+}
+
+
+/* .quarter specifies the length of both left and right articles in the first row.*/
+
+.quarter {
+    flex: 1;
+}
+
+
+/* .half specifies the length of the middle article in the first row.*/
+
+.half {
+    flex: 2;
+}
+
+
+/* .three-quarter specifies the properties of the unordered list article of the second row.*/
+
+.three-quarter {
+    flex: 3;
+}
+
+
+/* .nav-list specifies how the list of navigation items are supposed to be displayed.*/
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* .nav-item specifies how much area each navigation item is supposed to occupy along with other properties for each navigational item.*/
+
+.nav-item {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 30px;
+    color: #555;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* .nav-item a is has an added specificity with the a tag for the sake of removing the text decoration that is assigned by default to a hyperlink.*/
+
+.nav-item a {
+    text-decoration: none;
+    color: #555;
+}
+
+
+/* .nav-item a: hover tells each of the nav items what to do when mouse is hovering over one.*/
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+
+/* .nav-item:nth-child(n) Here nth-child is a selector for .nav-item class which specifies a CSS property for the nth child of its parent element.*/
+
+.nav-item:nth-child(1) {
+    background-color: #ffeaa7;
+}
+
+.nav-item:nth-child(2) {
+    background-color: #81ecec;
+}
+
+.nav-item:nth-child(3) {
+    background-color: #55efc4;
+}
+
+.nav-item:nth-child(4) {
+    background-color: #74b9ff;
+}
+
+.nav-item:nth-child(5) {
+    background-color: #a29bfe;
+}
